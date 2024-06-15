@@ -1,0 +1,76 @@
+---
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+import { ViewTransitions } from "astro:transitions"
+import Header from "../components/Header.astro"
+import Services from "../components/Services.astro"
+import Solutions from "../components/Solutions.astro"
+import Customers from "../components/Customers.astro"
+import Footer from "../components/Footer.astro"
+import Contact from "../components/Contact.astro"
+import FloatingButton from "../components/FloatingButton.astro"
+import "@fontsource-variable/onest"
+---
+
+<!doctype html>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta
+      name='description'
+      content='Ofrecemos servicios de desarrollo de aplicaciones personalizadas para satisfacer las necesidades de tu empresa. Contacta con nosotros para soluciones innovadoras y eficientes.'
+    />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='./favicon.ico' />
+    <meta name='generator' content={Astro.generator} />
+    <meta property='og:title' content={title} />
+    <meta
+      property='og:description'
+      content='Ofrecemos servicios de desarrollo de aplicaciones personalizadas para satisfacer las necesidades de tu empresa. Contacta con nosotros para soluciones innovadoras y eficientes.'
+    />
+    <meta
+      property='og:image'
+      content='https://www.logicalsistemas.com/assets/img/logo.png'
+    />
+    <meta property='og:url' content='https://www.logicalsistemas.com/' />
+    <title>{title}</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      type='text/partytow'
+      async
+      src='https://www.googletagmanager.com/gtag/js?id=AW-11436068079'></script>
+    <script type='text/partytow'>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+      gtag("config", "TOKEN")
+    </script>
+    <ViewTransitions />
+  </head>
+  <body class='mx-auto'>
+    <Header />
+    <main>
+      <Services transition:name='hero' />
+      <Solutions />
+      <Customers />
+      <Contact />
+      <FloatingButton />
+    </main>
+    <Footer />
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-family: "Onest Variable", Arial;
+      }
+    </style>
+  </body>
+</html>

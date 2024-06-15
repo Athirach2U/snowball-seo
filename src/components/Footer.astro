@@ -1,0 +1,74 @@
+---
+import WhatsAppSvg from "./svg/WhatsAppSvg.astro"
+import EmailSvg from "./svg/EmailSvg.astro"
+import InstagramSvg from "./svg/InstagramSvg.astro"
+---
+
+<section
+  id='footer'
+  class='flex flex-col justify-items-center dark:bg-principalDark py-12 px-8 first:gap-y-2'
+>
+  <div
+    class='flex flex-col items-center md:mx-24 md:flex-row md:justify-between md:pt-12 dark:text-white mb-8'
+  >
+    <img
+      loading='lazy'
+      class='w-48 mb-4'
+      src='/images/logo.webp'
+      alt='Logical Sistemas'
+    />
+
+    <div class='flex flex-col font-thin md:gap-y-2 md:text-md'>
+      <p class='font-semibold text-principal dark:text-white'>
+        <span>Sede principal:</span> Cali - Colombia
+      </p>
+      <p class='flex items-center'>
+        <WhatsAppSvg />
+        &nbsp WhatsApp 1: &nbsp <a
+          target='_blank'
+          class='underline decoration-solid decoration-green-500 underline-offset-1'
+          href='https://wa.link/9ifugt'
+        >
+          +57 3022813088</a
+        >
+      </p>
+      <p class='flex items-center'>
+        <WhatsAppSvg />
+        &nbsp WhatsApp 2:&nbsp <a
+          target='_blank'
+          class='underline decoration-solid decoration-green-500 underline-offset-1'
+          href='https://walink.co/e6e766'
+        >
+          +57 3166801483</a
+        >
+      </p>
+      <p class='flex items-center'>
+        <EmailSvg />
+        <span class='pl-2'>Email:</span> &nbsp info@logicalsistemas.com
+      </p>
+
+      <p class='flex items-center'>
+        <InstagramSvg />
+        <a
+          target='_blank'
+          class='pl-2 underline decoration-solid decoration-purple-500 underline-offset-1'
+          href='https://www.instagram.com/logicalsistemas/'
+        >
+          logicalsistemas</a
+        >
+      </p>
+    </div>
+  </div>
+  <p class='text-center text-sm font-light text-black-400 dark:text-white'>
+    @2024 Logical Sistemas. Todos los derechos reservados. Created By:
+    <a
+      class='underline text-black/70 dark:text-gray-100'
+      href='https://www.linkedin.com/in/iv%C3%A1n-andr%C3%A9s-lop%C3%A9z-g%C3%B3mez-1b2a1b187/'
+      target='_blank'>Andrés López</a
+    >. Designed By: <a
+      class='underline text-black/70 dark:text-gray-100'
+      href='https://www.linkedin.com/in/santiago-navas-calero-55468910a/'
+      target='_blank'>Santiago Navas</a
+    >
+  </p>
+</section>

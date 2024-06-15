@@ -1,0 +1,70 @@
+---
+import CardServices from "./CardService.astro"
+import DesktopSvg from "./svg/DesktopSvg.astro"
+import WebAplicationSvg from "./svg/WebAplicationSvg.astro"
+import MobileSvg from "./svg/MobileSvg.astro"
+const services = [
+  {
+    title: "Desarrollo de software",
+    description:
+      "Innovamos con responsabilidad. Entregamos soluciones de software de calidad, a tiempo.",
+    icon: "config",
+  },
+  {
+    title: "Aplicaciones Web",
+    description:
+      "Productividad y precisión. Creamos aplicaciones web a medida, puntualmente.",
+    icon: "web",
+  },
+  {
+    title: "Aplicaciones Móviles",
+    description:
+      "Responsabilidad en cada línea de código. Desarrollamos apps móviles eficientes.",
+    icon: "DesktopSvg",
+  },
+]
+---
+
+<section id='services' class='py-8 gap-y-4 dark:bg-principalDark'>
+  <div class='flex flex-col gap-y-4 mx-4 my-4 md:mx-28 md:my-20'>
+    <h2 class='text-center text-xl text-principal dark:text-white'>
+      Desarrollamos software, aplicaciones web y móviles a medida
+    </h2>
+
+    <span
+      class='text-lg text-center font-semibold md:text-3xl lg:text-4xl dark:text-white'
+    >
+      Transformamos tus ideas en soluciones digitales impactantes para impulsar
+      tu éxito en línea.
+    </span>
+
+    <div
+      class='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center md:pt-10 dark:text-white'
+    >
+      {
+        (
+          <>
+            <CardServices
+              title={services[0].title}
+              description={services[0].description}
+            >
+              <DesktopSvg />
+            </CardServices>
+            <CardServices
+              title={services[1].title}
+              description={services[1].description}
+            >
+              <WebAplicationSvg />
+            </CardServices>
+            <CardServices
+              title={services[2].title}
+              description={services[2].description}
+            >
+              <MobileSvg class='h-4' />
+            </CardServices>
+          </>
+        )
+      }
+    </div>
+  </div>
+</section>

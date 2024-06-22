@@ -7,6 +7,7 @@ import ContactButton from "../components/ContactButton.astro"
   class='flex flex-col gap-y-4 items-center md:items-start text-center md:text-start md:justify-around px-8 py-8 md:px-26 md:py-32 md:flex-row bg-secondary dark:bg-secondaryDark'
 >
   <div class='md:max-w-2/3 lg:max-w-3xl'>
+    
     <h2
       class='mb-2 text-2xl font-bold tracking-tight text-red-700 dark:text-white'
     >
@@ -20,9 +21,11 @@ import ContactButton from "../components/ContactButton.astro"
       hasta la gestión de bases de datos</span>, cada elemento se selecciona
       cuidadosamente para proporcionar resultados excepcionales.
     </p>
-    <ContactButton />
   </div>
-  <div class='flex flex-col gap-y-4 mt-4 md:mt-none'>
+  <video autoplay muted loop id="myVideo" >
+    <source src="../public/images/seo-hero.mp4" type="video/mp4">
+  </video>
+  <!-- <div class='flex flex-col gap-y-4 mt-4 md:mt-none'>
     <div class='flex gap-x-6 gap-y-4'>
       <div
         class='row-start-1 rotate-2 shadow-lg shadow-blue-300 hover:shadow-blue-400 rounded-lg p-2 h-20'
@@ -52,6 +55,7 @@ import ContactButton from "../components/ContactButton.astro"
         >
       </div>
     </div>
+    
     <div class='flex gap-x-6 gap-y-4'>
       <div
         class='row-start-2 rotate-[-3deg] shadow-lg shadow-gray-300 hover:shadow-gray-400 rounded-lg p-2 h-20'
@@ -79,7 +83,8 @@ import ContactButton from "../components/ContactButton.astro"
             d='M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m273.7-144.5 47.9-83a10 10 0 1 0 -17.3-10h0l-48.5 84.1a301.3 301.3 0 0 0 -246.6 0L116.2 64.5a10 10 0 1 0 -17.3 10h0l47.9 83C64.5 202.2 8.2 285.6 0 384H576c-8.2-98.5-64.5-181.8-146.9-226.6'
           ></path></svg
         >
+        
       </div>
     </div>
-  </div>
+  </div> -->
 </section>

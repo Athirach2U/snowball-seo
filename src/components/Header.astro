@@ -1,16 +1,23 @@
 ---
 import ContactButton from "../components/ContactButton.astro"
 ---
-<header class='bg-hero-pattern md:bg-cover md:bg-center lg:h-[700px]'>
+<!-- class='bg-hero-pattern md:bg-cover md:bg-center lg:h-[700px]' -->
+<header>
+  <video autoplay muted loop id="myVideo">
+    <source src="../public/images/hero.mp4" type="video/mp4">
+</video>
   <nav
     class='flex top-0 w-full px-6 py-4 md:z-50 md:fixed md:backdrop-blur-sm items-center md:px-12 max-md:flex-col md:flex-row sm:justify-center md:justify-between text-center bg-transparent md:py-4 text-white justify-items-center lg:text-lg'
   >
     <div class='flex max-md:flex-col text-principal dark:text-white'>
-      <img
-        class='object-scale-down h-14 md:pr-8'
-        src='/images/snowball_logo.png'
-        alt='Logical Sistemas'
-      />
+      <a href="/">
+          <img
+          class='object-scale-down h-14 md:pr-8'
+          src='/images/snowball_logo.png'
+          alt='Logical Sistemas'   
+      /></a>
+      
+
       <ul class='flex max-md:flex-col space-x-3 lg:space-x-8 items-center'>
         <li><a href='/'>Home</a></li>
         <li><a href='#services'>Packages</a></li>
@@ -24,9 +31,9 @@ import ContactButton from "../components/ContactButton.astro"
   <div
     class='flex flex-col text-center md:text-start py-8 px-4 md:px-8 md:py-16 md:mx-24 sm:w-full gap-y-4 lg:ps-0 md:w-4/6 lg:w-7/12 text-white'
   >
-    <p class="md:mt-20" >Transformando Ideas en Innovación Digital</p>
+    <p>Transformando Ideas en Innovación Digital</p>
 
-    <h1 class='text-4xl md:text-6xl text-principal/90 font-semibold'>
+    <h1 class='text-4xl md:text-6xl text-principal/90 font-semibold text-white'>
       SNOWBALL-SEO version 0.0.0
     </h1>
 
@@ -37,17 +44,17 @@ import ContactButton from "../components/ContactButton.astro"
       conectado. Descubre cómo damos vida a las visiones, creando oportunidades
       e impacto duradero en el mundo digital actual.
     </p>
-
+    
     <div class='flex flex-col gap-4 pt-12 sm:flex-row'>
       <a
         href='#services'
-        class='rounded-sm px-4 py-3 text-sm text-center font-normal bg-transparent border border-white'
-        >Explora nuestros servicios</a
+        class='rounded-sm px-4 py-3 text-sm text-center top-5 font-normal bg-transparent border border-white'
+        >Packages</a
       >
       <a
         href='#contact'
         class='rounded-sm px-4 py-3 text-sm text-center font-normal bg-principal border border-principal'
-        >Contacta con Nosotros</a
+        >ติดต่อเรา</a
       >
     </div>
   </div>
